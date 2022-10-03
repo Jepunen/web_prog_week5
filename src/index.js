@@ -37,6 +37,7 @@ const initializeMap = (data) => {
 
   let osm = L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     maxZoom: 19,
+    minZoom: -3,
     attribution: "© OpenStreetMap"
   }).addTo(map);
 
